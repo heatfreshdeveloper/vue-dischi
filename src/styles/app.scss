@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fontsource/montserrat/index.css";
+
+body { 
+    font-family: "Montserrat"; 
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+.navbar {
+    background-color: $bg-color-components;
+    img {
+        width: 5%;
+    }
+}
