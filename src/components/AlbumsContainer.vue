@@ -1,5 +1,5 @@
 <template>
-  <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="row row-cols-1 row-cols-md-5 g-4">
       <div class="col" v-for="albums in albumsList" :key="albums.id">
         <albums
           :poster="albums.poster"
@@ -25,12 +25,12 @@ export default {
         }
   },
   methods: {
-      mounted() {
-          axios.get("https://flynn.boolean.careers/exercises/api/array/music").then(resp => {
-              this.albumsList = resp.data.response;
+  },
+  mounted() {
+        axios.get("https://flynn.boolean.careers/exercises/api/array/music").then(resp => {
+          this.albumsList = resp.data.response;
           })
-      }
-  }
+    }
 }
 </script>
 

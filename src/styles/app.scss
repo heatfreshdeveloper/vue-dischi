@@ -11,7 +11,33 @@ body {
 
 .navbar {
     background-color: $bg-color-components;
+    margin-bottom: 100px;
     img {
-        width: 5%;
+        width: 3%;
+    }
+}
+
+.card {
+    background-color: $bg-color-components;
+    min-height: 430px;
+    .card-img-top {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+    }
+    .card-text {
+        color: grey;
+        text-align: center;
+        ul {
+            padding-left: 0;
+            li {
+            list-style: none;
+            font-weight: bold;
+            }
+        }
     }
 }
