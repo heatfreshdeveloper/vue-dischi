@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
+    <albums-filter @search="searchAlbums"></albums-filter>
     <div class="container">
       <albums-container></albums-container>
     </div>
@@ -9,14 +10,22 @@
 
 <script>
 import AlbumsContainer from './components/AlbumsContainer.vue'
+import AlbumsFilter from './components/AlbumsFilter.vue'
 import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    AlbumsContainer
+    AlbumsContainer,
+    AlbumsFilter
+  },
+  methods: {
+    searchAlbums() {
+      
+    }
   }
+
 }
 </script>
 
